@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARMA'S</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="logo-container">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="Logo.JPG" width="160" height="36" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-container">
+                    <nav class="header-menu">
+                        <ul class="menu food-nav-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome To <br><span>SHARMA'S</span></h1>
+            <p>A Premier <span>Veg Indian Restaurant</span>. Experience the rich culinary heritage of India with our expertly crafted menu, where every dish is prepared with fresh ingredients and traditional spices!</p>
+            <a href="#about" class="read-more-btn">Read More</a>
+        </div>
+        <div class="image-container">
+            <img src="Thali.jpg" alt="Your Image">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About <span>Us</span></h2>
+        </div>
+        <div class="about-content">
+            <div class="about-section">
+                <h3>History</h3>
+                <p>Sharma's was founded in 1980 by <br> Mr. Pranjal Sharma in the heart of Delhi, India. From humble beginnings as a small family-run eatery, Sharma's has grown into an international chain of restaurants known for its authentic Indian cuisine. Our dedication to quality and tradition has won us loyal customers around the world.</p>
+            </div>
+            <div class="about-section">
+                <h3>Branches</h3>
+                <p>Today, Sharma's boasts branches in several countries, including the USA, UK, Canada, Australia, and the UAE. Each branch offers a unique dining experience, maintaining the high standards of flavor and hospitality that our customers have come to expect.</p>
+            </div>
+            <div class="about-section">
+                <h3>Mission</h3>
+                <p>Our mission is to bring the taste of India to the world, offering a diverse menu that caters to all palates. From spicy curries to sweet desserts, every dish is a testament to our commitment to culinary excellence.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Menu section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Menu</h2>
+        </div>
+        <div class="menu-buttons">
+            <button class="menu-btn active" data-menu="breakfast">Breakfast</button>
+            <button class="menu-btn" data-menu="curries">Curries</button>
+            <button class="menu-btn" data-menu="breads">Breads</button>
+            <button class="menu-btn" data-menu="rice">Rice</button>
+            <button class="menu-btn" data-menu="desserts">Desserts</button>
+        </div>
+        <div class="menu-items">
+            <!-- Content dynamically added by JavaScript -->
+        </div>
+        <div class="total-section">
+            <h3>Total: $ <span id="total">0.00</span></h3>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </section>
+
+
+    <!--  Order summary section -->
+    <section id="order-summary" class="order-summary">
+        <div class="container">
+            <h2>Order Summary</h2>
+        </div>
+            <div class="summary-items">
+                <!-- Order summary items will be dynamically added here -->
+            </div>
+            <div class="total-section">
+                <h3>Total: $<span id="summary-total">0.00</span></h3>
+                <button class="pay-btn">Pay Now</button>
+            </div>
+    </section>
+
+
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="RI1.jpg" alt="Image 1" class="gallery-thumb">
+            </div>
+            <div class="gallery-item">
+                <img src="RI2.jpg" alt="Image 2" class="gallery-thumb">
+            </div>
+            <div class="gallery-item">
+                <img src="RI3.jpg" alt="Image 3" class="gallery-thumb">
+            </div>
+            <div class="gallery-item">
+                <img src="RI4.jpg" alt="Image 4" class="gallery-thumb">
+            </div>
+            <div class="gallery-item">
+                <img src="RI5.jpg" alt="Image 5" class="gallery-thumb">
+            </div>
+            <div class="gallery-item">
+                <img src="RI6.jpg" alt="Image 6" class="gallery-thumb">
+            </div>
+            <div class="gallery-item">
+                <img src="RI7.jpg" alt="Image 6" class="gallery-thumb">
+            </div>
+            <div class="gallery-item">
+                <img src="RI8.jpg" alt="Image 6" class="gallery-thumb">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="site-footer">
+        <div id="copyright-logo">
+            <a href="index.html">
+                <img src="Logo.JPG" width="160" height="36" alt="Logo">
+            </a>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2024 by Pranjal Sharma NIT Warangal | All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
